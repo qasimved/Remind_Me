@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite">
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:gravity="center_vertical|center_horizontal"
+            android:shadowColor="@color/block_new_2"
+            android:text="Register New User Account"
+            android:textAlignment="center"
+            android:textColor="@color/block_new_2"
+            android:textColorHighlight="@color/block_new_2"
+            android:textColorHint="@color/block_new_2"
+            android:textColorLink="@color/block_new_2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:backgroundTint="@color/block_new_2"
+            android:drawableLeft="@drawable/ic_person_block_2_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/block_new_2"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/block_new_2"
+            android:textColorHint="@color/block_new_2"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:backgroundTint="@color/block_new_2"
+            android:drawableLeft="@drawable/ic_email_block_2_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/block_new_2"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/block_new_2"
+            android:textColorHint="@color/block_new_2"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:backgroundTint="@color/block_new_2"
+            android:drawableLeft="@drawable/ic_lock_outline_block_2_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/block_new_2"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/block_new_2"
+            android:textColorHint="@color/block_new_2"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:backgroundTint="@color/block_new_2"
+            android:drawableLeft="@drawable/ic_lock_outline_block_2_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/block_new_2"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/block_new_2"
+            android:textColorHint="@color/block_new_2"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cellNo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:backgroundTint="@color/block_new_2"
+            android:drawableLeft="@drawable/ic_phone_block_2_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/block_new_2"
+            android:hint="Mobile No"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/block_new_2"
+            android:textColorHint="@color/block_new_2"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:gravity="center_vertical|center_horizontal"
+                android:shadowColor="@color/block_new_2"
+                android:text="Gender"
+                android:textColor="@color/block_new_2"
+                android:textColorHighlight="@color/block_new_2"
+                android:textColorHint="@color/block_new_2"
+                android:textColorLink="@color/block_new_2"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/gender"
+                app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="50"
+                    android:checked="true"
+                    android:shadowColor="@color/block_new_2"
+                    android:text="MALE"
+                    android:textColor="@color/block_new_2"
+                    android:textColorHighlight="@color/block_new_2"
+                    android:textColorHint="@color/block_new_2"
+                    android:textColorLink="@color/block_new_2"
+                    app:layout_constraintStart_toEndOf="@+id/gender"
+                    app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:shadowColor="@color/block_new_2"
+                    android:text="FEMALE"
+                    android:textColor="@color/block_new_2"
+                    android:textColorHighlight="@color/block_new_2"
+                    android:textColorHint="@color/block_new_2"
+                    android:textColorLink="@color/block_new_2"
+                    app:layout_constraintStart_toEndOf="@+id/male"
+                    app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/rectangle_custom_btn"
+                android:text="REGISTER"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

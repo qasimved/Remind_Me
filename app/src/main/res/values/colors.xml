@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="snowWhite">#e8eaf6</color>
+    <color name="customized_red">#96120a</color>
+    <color name="primary">#96120a</color>
+    <color name="focus_color">#FF4081</color>
+    <color name="pureWhite">#FFFFFF</color>
+    <color name="White">#f4f0f0</color>
+    <color name="toolbar_title">#ffffff</color>
+    <color name="primary_dark">#263238</color>
+    <color name="accent">#78909c</color>
+    <color name="control_normal">#888888</color>
+    <color name="fab_pressed">#546e7a</color>
+
+
+    <color name="block_1">#F1524F</color>
+    <color name="block_2">#02B7D6</color>
+    <color name="block_3">#FEAC2C</color>
+    <color name="block_4">#01BFA5</color>
+
+
+    <color name="block_new_1">#F23C49</color>
+    <color name="block_new_2">#E67343</color>
+    <color name="block_new_3">#F89D33</color>
+    <color name="block_new_4">#F2C836</color>
+
+</resources>

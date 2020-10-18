@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qasim1793.remindme">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name=".Frontend.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Frontend.SignupActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Frontend.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Frontend.DashboardActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Frontend.ReminderActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Frontend.ReminderEditActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Frontend.ReminderAddActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <receiver android:name=".Backend.AlarmReceiver" />
+        <receiver android:name=".Backend.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Frontend.TrackingActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Frontend.AddLocationReminder" />
+        <activity android:name=".Frontend.SkipActivity" />
+        <activity android:name=".Frontend.AddNewCategoryActivity" />
+        <activity android:name=".Frontend.FeedbackActivity" />
+        <activity android:name=".Frontend.ReminderHistoryActivity" />
+        <activity android:name=".Frontend.ProfileActivity" />
+        <activity android:name=".Frontend.ChangePassword" />
+        <activity android:name=".Frontend.LocationReminderHistoryActivity" />
+        <activity android:name=".Frontend.LocationAlarmEditDelete" />
+
+        <service android:name=".Backend.BackgroundService" />
+
+        <activity android:name=".Frontend.AddLocationToReminder" />
+        <activity
+            android:name=".Frontend.DialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            ></activity>
+    </application>
+
+</manifest>

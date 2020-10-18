@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frontend.LocationAlarmEditDelete">
+
+    <LinearLayout
+        android:id="@+id/add_reminder_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/block_new_1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:weightSum="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:src="@drawable/ic_check_black_24dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:visibility="visible"
+                android:src="@drawable/ic_edit_location_black_24dp" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:visibility="visible"
+                android:src="@drawable/ic_delete_black_24dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="80"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Add Alarm Title"
+            android:inputType="textCapWords|textMultiLine"
+            android:lines="4"
+            android:minLines="4"
+            android:scrollHorizontally="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/primary_text_disabled_material_dark"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="false"
+        android:background="@color/block_new_1"
+        android:gravity="center_vertical|center_horizontal"
+        android:shadowColor="@color/pureWhite"
+        android:text="Change location from map by tapping"
+        android:textColor="@color/pureWhite"
+        android:textColorHighlight="@color/pureWhite"
+        android:textColorHint="@color/pureWhite"
+        android:textColorLink="@color/pureWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/pureWhite"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/add_reminder_layout_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pureWhite"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RepeatType"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?android:attr/selectableItemBackground"
+
+                >
+
+                <ImageView
+                    android:id="@+id/location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_subject_red_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/location_icon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/repeat_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/block_new_1"
+                        android:text="Description"
+                        android:textColor="@color/block_new_1"
+                        android:textColorHighlight="@color/block_new_1"
+                        android:textColorHint="@color/block_new_1"
+                        android:textColorLink="@color/block_new_1"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/block_new_2"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

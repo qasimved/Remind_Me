@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pureWhite"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/block_new_1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="User Name"
+            android:textAlignment="center"
+            android:textColor="@color/pureWhite"
+            android:textColorHighlight="@color/pureWhite"
+            android:textColorHint="@color/pureWhite"
+            android:textColorLink="@color/pureWhite"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:weightSum="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="90">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_1_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/alarm_icon" />
+
+                    <TextView
+                        android:id="@+id/block_1_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="Add Reminder"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_1_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_2_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/add_location_alarm_icon" />
+
+                    <TextView
+                        android:id="@+id/block_2_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="Add Location Reminder"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_2_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_3"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_3_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/history_icon" />
+
+                    <TextView
+                        android:id="@+id/block_3_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="View History"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_3_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:weightSum="90">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_4"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_4_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/profile_icon" />
+
+                    <TextView
+                        android:id="@+id/block_4_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="Manage User Profile"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_4_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_5_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/add_new_category" />
+
+                    <TextView
+                        android:id="@+id/block_5_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="Add New Category"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_5_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_2"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_6_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/fav_icon" />
+
+                    <TextView
+                        android:id="@+id/block_6_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="View Favourt Reminder"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_6_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_3"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_7_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/add_alarm_icon" />
+
+                    <TextView
+                        android:id="@+id/block_7_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="View Active / Deactive Reminder"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_7_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_4"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_8_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/feed_back_icon" />
+
+                    <TextView
+                        android:id="@+id/block_8_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="Feed Back"
+                        android:textAlignment="center"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_8_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/block_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="30"
+                app:cardBackgroundColor="@color/block_new_1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/block_9_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logout_icon" />
+
+                    <TextView
+                        android:id="@+id/block_9_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:shadowColor="@color/pureWhite"
+                        android:singleLine="false"
+                        android:text="Logout"
+                        android:textColor="@color/pureWhite"
+                        android:textColorHighlight="@color/pureWhite"
+                        android:textColorHint="@color/pureWhite"
+                        android:textColorLink="@color/pureWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/block_9_img" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

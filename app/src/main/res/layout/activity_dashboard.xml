@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:background="@color/pureWhite"
+    android:orientation="vertical"
+    tools:context=".Frontend.DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/block1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/block_1"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="bottom|center_horizontal"
+                android:shadowColor="@color/pureWhite"
+                android:text="Profile"
+                android:textColor="@color/pureWhite"
+                android:textColorHighlight="@color/pureWhite"
+                android:textColorHint="@color/pureWhite"
+                android:textColorLink="@color/pureWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                app:srcCompat="@drawable/profile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/block2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/block_2"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="bottom|center_horizontal"
+                android:shadowColor="@color/pureWhite"
+                android:text="Alarm"
+                android:textColor="@color/pureWhite"
+                android:textColorHighlight="@color/pureWhite"
+                android:textColorHint="@color/pureWhite"
+                android:textColorLink="@color/pureWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                app:srcCompat="@drawable/alarm" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/block3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/block_3"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="bottom|center_horizontal"
+                android:shadowColor="@color/pureWhite"
+                android:text="Live Tracking"
+                android:textColor="@color/pureWhite"
+                android:textColorHighlight="@color/pureWhite"
+                android:textColorHint="@color/pureWhite"
+                android:textColorLink="@color/pureWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                app:srcCompat="@drawable/tracking" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/block4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@color/block_4"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="bottom|center_horizontal"
+                android:shadowColor="@color/pureWhite"
+                android:text="Logout"
+                android:textColor="@color/pureWhite"
+                android:textColorHighlight="@color/pureWhite"
+                android:textColorHint="@color/pureWhite"
+                android:textColorLink="@color/pureWhite"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                app:srcCompat="@drawable/logout" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
